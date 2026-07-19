@@ -6,23 +6,6 @@ const port = 3000;
 
 app.use(express.json());
 
-const tasks = [
-   {
-        id: 1,
-        title: "Learn Express",
-        done: false
-    },
-    {
-        id: 2,
-        title: "Build Task API",
-        done: true
-    },
-    {
-        id: 3,
-        title: "Commit Assignment",
-        done: false
-    }
-];
 
 app.get("/", (req, res) => {
     res.json({
@@ -42,3 +25,4 @@ app.get("/health", (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 })
+
